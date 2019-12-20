@@ -1,0 +1,183 @@
+JSON
+JavaScript object notation
+[
+    {
+        "name":"John",
+        "class":"ui"
+    },
+    {
+        "name":"eva",
+        "class":"node",
+        "city":"helsinki"
+    }
+]
+
+package.JSON
+>>> Main file in the application
+    Start
+    test
+    manage packages
+    Description
+
+npm => node package manager
+node_modules
+
+//////////////////////////////////////
+    Step to Create package.JSON
+//////////////////////////////////////
+** NodeJs must  be install
+> using cmd navigate to the folder
+> npm init
+> Answer all question
+>  type "yes"
+
+
+//////////////////////////////////////
+   About packages
+//////////////////////////////////////
+
+> Local
+> Global
+
+> using cmd navigate to the folder
+> npm install zone.js
+
+>Global
+    >build
+    >Start
+    >Monitor
+    >test
+
+Win
+>  Run cmd as admin
+>  npm i -g @aakashdeveloper/create-node-app
+
+Mac/Linux
+> run cmd/terminal
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+
+//////////////////////////////////////
+    Step to Create node app
+//////////////////////////////////////
+> npm i -g @aakashdeveloper/create-node-app
+> using cmd navigate to the folder
+> generate
+> node-app
+> application name "myapp"
+> cd myapp
+> npm start
+> in browser   http://localhost:7600/
+
+
+npm install -g nodemon
+
+//Es5
+function add(a,b){
+    return a+b
+}
+
+var a = 10
+var b = "my age is "+a 
+"my age is 10"
+
+//Es6
+var add = (a,b) => { return a+b}
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
+
+//////Template Engine//////
+npm i ejs
+
+var a = [0,1,2,3]
+for(i=0;i<a.length;i++){
+    console.log(i)
+}
+
+SQl         NoSQL
+database    database
+table       collection
+Row          document
+
+Sno  | Hindi  | English
+1    | 80     |
+2    |        |80
+
+[
+    {
+        sno:1,
+        hindi:80
+    },
+    {
+        sno:2,
+        English:80
+}
+]
+
+after installing mongodb
+
+>make data folder in c drive
+> insidee data make db 
+
+> go inside monodb folder through cmd and type mongod 
+> go inside monodb folder through cmd and type mongo
+
+Mac
+sudo mongod --dbpath /System/Volumes/Data/data/db
+
+CRUD
+
+show dbs 
+use classdatabase
+db.products.find()
+db.products.find().pretty()
+db.products.find({productId:8}).pretty()
+db.products.count()
+db.decnode.insert({"name":"john","class":"node"})
+db.decnode.insert({_id:1,"name":"eva","class":"node"})
+db.products.find({productId:10},{productId:1}).pretty()
+db.products.find({productId:10},{productId:1,productName:1,_id:0}).pretty()
+db.products.find({productId:10},{_id:0}).pretty()
+
+db.products.find({},{_id:0}).sort({productName:-1}).pretty()
+
+
+User(Want Ticket Status)
+        ^
+NodeJs(MyApi Layer)
+        ^
+ServiceNow(Api)(Ticket Status)
+
+
+///////////GitHub//////////////
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/learnGit1.git
+git push -u origin master
+
+///NextTime///
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b newfeature
+
+npm i axios express redis
+
+
+JWT
+GraphQL
+postgress with NodeJs
+
+testing
+Deployment
+>Nginx
+>Docker
+
+npm i chai chai-http mocha --save-dev
+
+
+
